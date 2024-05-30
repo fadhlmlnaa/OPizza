@@ -24,17 +24,22 @@
         <!-- Nav -->
         <nav class="nav-list">
           <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Pizza</a>
-            </li>
-            <li>
-              <a href="#">Order Now!</a>
-            </li>
+              <li>
+                  <a href="#">Home</a>
+              </li>
+              <li class="dropdown">
+                  <a href="#">Pizza &#9662;</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">Margherita</a></li>
+                      <li><a href="#">Neapolitan</a></li>
+                      <li><a href="#">Four Seasons</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Order Now!</a>
+              </li>
           </ul>
-        </nav>
+      </nav>
       </div>
     </header>
     <!-- Main Content -->
@@ -56,8 +61,90 @@
           <img src="assets/img/pizza.png" alt="Pizza" />
         </div>
       </div>
-
-      
+      <div class="rank">
+        <div class="list-inline">
+          <ul>
+            <li>1421 Buyers</li>
+            <li>1221 Reviews</li>
+            <li>5 Stars</li>
+          </ul>
+        </div>
+      </div>
+      <article>
+        <div class="container">
+          <div class="content-card">
+            <div class="text-article">
+              <h3>Margherita</h3>
+              <p>
+                Hello, pizza lovers! Today, we're going to explore one of the
+                most classic pizzas beloved by people around the world, Pizza
+                Margherita. With its combination of fresh tomato sauce,
+                mozzarella, and basil leaves, this pizza is the perfect
+                representation of authentic Italian flavors.
+              </p>
+            </div>
+          </div>
+          <div class="img-front">
+            <img src="assets/img/pizza-margarita.jpg" alt="Pizza Margherita" />
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="container">
+          <div class="img-front">
+            <img src="assets/img/Neapolitan.jpg" alt="Pizza Margherita" />
+          </div>
+          <div class="content-card">
+            <div class="text-article">
+              <h3>Neapolitan</h3>
+              <p>
+                Origins (18th Century) : Neapolitan pizza emerged as a popular
+                food for the working class in Naples. Initially sold by street
+                vendors, it was a simple flatbread topped with garlic, lard, and
+                salt, evolving over time with the addition of tomatoes brought
+                from the Americas
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="container">
+          <div class="content-card">
+            <div class="text-article">
+              <h3>Quattro Stagioni</h3>
+              <p>
+                "Quattro Stagioni" (Four Seasons) pizza is a classic Italian
+                pizza that features four distinct sections, each representing
+                one of the four seasons of the year. Each quarter of the pizza
+                is topped with different ingredients, symbolizing a different
+                season.
+              </p>
+            </div>
+          </div>
+          <div class="img-front">
+            <img src="assets/img/four-seasons.jpg" alt="Pizza Margherita" />
+          </div>
+        </div>
+      </article>
     </main>
+    <aside class="profile card">
+      <h2>Order Now from OPizza!</h2>
+      <p>
+        Enjoy the delicious taste of our classic Pizza Margherita and many more.
+        Fresh ingredients, authentic recipes, and fast delivery!
+      </p>
+      <figure>
+        <img src="assets/img/aside-img.png" alt="Pizza" />
+        <figcaption>
+          <a class="btn" href="https://www.opizza.com/order">Order Now</a>
+        </figcaption>
+      </figure>
+    </aside>
+    <!-- Footer -->
+    <footer>
+      <p>OPizza &#169; 2024, Fadhil Maulana</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

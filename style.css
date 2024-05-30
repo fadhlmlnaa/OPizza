@@ -12,13 +12,14 @@ body {
   flex-direction: column;
 }
 
-header .container{
+header .container {
   justify-content: space-around;
 }
 
 .container {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .logo img {
@@ -26,7 +27,7 @@ header .container{
   transition: all 0.2s ease-in-out;
 }
 
-.nav-list ul{
+.nav-list ul {
   padding: 10px;
   display: flex;
   gap: 2rem;
@@ -37,51 +38,54 @@ header .container{
   gap: 1rem;
 }
 
-.container .nav-list li a {
+.container .nav-list li{
   padding: 0.5rem 1.5rem;
   border-radius: 999px;
-  text-decoration: none;
   font-size: 1.05rem;
   font-weight: 500;
   color: black;
   transition: all 0.2s ease-in-out;
 }
-.container .nav-list li:hover a {
-  background-color: #A73121;
+
+.container .nav-list li a{
+  color: inherit;
+  text-decoration: none;  
+}
+.container .nav-list li:hover {
+  background-color: #a73121;
   color: white;
 }
 
 /* Main CSS */
 
-main .container{
+main .container {
+  margin: 40px 0px;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
-.intro-card{
+.intro-card {
   padding: 30px;
-  /* background-color: red; */
 }
 
-.intro-card .text-pizza{
+.intro-card .text-pizza {
   margin-top: 140px;
   padding: 10px;
 }
 
-.text-pizza h3{
+.text-pizza h3 {
   font-size: 24px;
   font-weight: bold;
 }
 
-.text-pizza p{
+.text-pizza p {
   width: 600px;
   font-size: 18px;
   font-weight: 400;
 }
 
-.btn{
-  background: #A73121;
+.btn {
+  background: #a73121;
   width: 150px;
   text-align: center;
   padding: 10px;
@@ -93,11 +97,97 @@ main .container{
   transition: all 0.2s ease-in-out;
 }
 
-.btn a{
+.btn a {
   text-decoration: none;
   color: inherit;
 }
 
-.img-front img{
+.img-front img {
   width: 500px;
+}
+
+.rank {
+  background-color: #f2e8c6;
+  padding: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-inline ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.list-inline ul li {
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 0px 150px;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.text-article {
+  margin: 120px 0;
+}
+
+.text-article h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text-article p {
+  width: 600px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.img-front img {
+  width: 500px;
+  border-radius: 25px;
+}
+
+footer {
+  background-color: #f2e8c6;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+}
+
+.profile table{
+  text-align: center;
+}
+
+.profile img {
+  width: 500px;
+}
+
+aside {
+  padding: 20px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+.dropdown-menu li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
